@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Ncloud VPE Demo</title>
+    <script src="https://player.vpe.naverncp.com/ncplayer.js?access_key=17e49e099ea78c1f1ae159fc1647316c"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+
+    <div class="playerWarp">
+        <div class="playerArea">
+            <div class="player" id="player"></div>
+        </div>
+    </div>
+
+    <div class="content pt-5 ">
+
+        <div class="space-y-3 flex ">
+
+            <div class="flex-1">
+                <h1>
+                    <strong>Chrome : Widevine / Window Edge : PlayReady</strong>
+                </h1>
+                <div>
+                    화면캡쳐 / 화면녹화를 시도해보세요.
+                </div>
+            </div>
+
+            <div class="flex-1 text-right">
+                <button type="button" class="rounded-md bg-black p-2 text-white text-sm px-4" onclick="drmPlayer.play()">재생하기</button>
+                <button type="button" class="rounded-md bg-black p-2 text-white text-sm px-4" onclick="drmPlayer.pause()">일시정지</button>
+                <button type="button" class="rounded-md bg-black p-2 text-white text-sm px-4" onclick="drmPlayer.fullscreen()">풀스크린</button>
+                <button type="button" class="rounded-md bg-black p-2 text-white text-sm px-4" onclick="drmPlayer.pip()">PIP</button>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script>
+
+
+    </script>
+    <script src="demo.js"></script>
+</body>
+</html>
